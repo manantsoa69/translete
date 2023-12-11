@@ -71,9 +71,7 @@ Réponse : How to send messages on Ahy Translate.
 Exemples abrégés :
   Madagascar (MG) 🇲🇬
   France (FR) 🇫🇷
-  Anglais (EN) 🇺🇸\n
-Pour plus d'exemples d'abréviations internationales de pays, je vous invite à envoyer un message à Ahy Bots.
-Cliquez ici : facebook.com/AhyBots`;
+  Anglais (EN) 🇺🇸 `;
               // Use Promise.all to send them concurrently
               await Promise.all([                
                 sendMessage(senderId, correctRequest),
@@ -82,7 +80,7 @@ Cliquez ici : facebook.com/AhyBots`;
 
             }
           } else {
-            const mess = `Hey, Pour la première fois sur nos services, envoyez-nous votre prénom écrit juste (0000 votre prénom).`
+            const mess = `Hey, Pour la première fois sur nos services, envoyez-nous votre prénom écrit juste (0000 "votre prénom" Ex 0000 Mana).`
             await sendMessage(senderId, mess);
           }
         } catch (err) {
